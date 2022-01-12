@@ -5,6 +5,7 @@ first argument.
 
 The most common subcommands are:
 
+* [`pyenv help`](#pyenv-help)
 * [`pyenv commands`](#pyenv-commands)
 * [`pyenv local`](#pyenv-local)
 * [`pyenv global`](#pyenv-global)
@@ -21,6 +22,13 @@ The most common subcommands are:
 * [`pyenv prefix`](#pyenv-prefix)
 * [`pyenv hooks`](#pyenv-hooks)
 * [`pyenv shims`](#pyenv-shims)
+* [`pyenv init`](#pyenv-init)
+* [`pyenv completions`](#pyenv-completions)
+
+## `pyenv help`
+
+List all available pyenv commands along with a brief description of what they do. Run `pyenv help <command>` for information on a specific command. For full documentation, see: https://github.com/pyenv/pyenv#readme
+
 
 ## `pyenv commands`
 
@@ -285,18 +293,18 @@ Lists all Python versions with the given command installed.
 
 ## `pyenv exec`
 
-    `Usage: pyenv exec <command> [arg1 arg2...]`
+    Usage: pyenv exec <command> [arg1 arg2...]
 
 Runs an executable by first preparing PATH so that the selected Python
 version's `bin` directory is at the front.
 
 For example, if the currently selected Python version is 3.9.7:
 
-    `pyenv exec pip install -r requirements.txt`
+    pyenv exec pip install -r requirements.txt
     
 is equivalent to:
 
-    `PATH="$PYENV_ROOT/versions/3.9.7/bin:$PATH" pip install -r requirements.txt`
+    PATH="$PYENV_ROOT/versions/3.9.7/bin:$PATH" pip install -r requirements.txt
 
 ## `pyenv root`
 
@@ -345,3 +353,20 @@ List existing pyenv shims.
     /home/user/.pyenv/shims/python3.9-gdb.py
     /home/user/.pyenv/shims/python3-config
     /home/user/.pyenv/shims/python-config
+
+## `pyenv init`
+
+Configure the shell environment for pyenv
+
+    Usage: eval "$(pyenv init [-|--path] [--no-rehash] [<shell>])"
+
+      -                    Initialize shims directory, print PYENV_SHELL variable, completions path
+                           and shell function
+      --path               Print shims path
+      --no-rehash          Add no rehash command to output     
+
+## `pyenv completions`
+
+Lists available completions for a given pyenv command.
+
+    Usage: pyenv completions <command> [arg1 arg2...]

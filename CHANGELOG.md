@@ -1,5 +1,46 @@
 ## Version History
 
+## Release 2.2.3
+
+* Add new pypy versions (pypy2.7-7.3.2~7.3.5) to the version list (#2194)
+* Fix Python 3.7.12 compilation on macOS arm64/M1. (#2190)
+* Fix Python 3.6.15 compilation on macOS arm64/M1. (#2189) 
+* Add Anaconda3-2021.11 (#2193) 
+* CPython 3.11.0a3 (#2187)
+* Fix errant "echo" in README install instructions (#2185)
+* Add Miniforge and Mambaforge 4.10.3-10 (#2184)
+* Add CPython 3.10.1 (#2183)
+* Fix 3.6.15 build on macOS (#2182)
+
+## Release 2.2.2
+
+* Add support for macOS Apple M1 (#2164)
+
+## Release 2.2.1
+
+* Add CPython 3.9.9 (#2162)
+* Add CPython 3.9.8 (#2152)
+* Add Add micropython 1.17 (#2158)
+* Add Add micropython 1.16 (#2158)
+* Patch 3.10.0 configure, fixes https://bugs.python.org/issue45350 (#2155)
+* Use command and type instead of which (#2144)
+* Add definition of pyenv help in COMMANDS.md #2139
+* Use OpenSSL 1.0 for CPython 2.7.18
+
+## Release 2.2.0
+* Adding PyPy release 7.3.7 (Python 3.7 and 3.8). (#2132)
+* Append Homebrew custom prefix to search path (#1957)
+* Add documentation for init command (#2125)
+* Add setup instructions for the case when one installs Pyenv as part of a batch job (#2127)
+* Add documentation for completions command (#2126)
+* Default --with-universal-archs to universal2 on Apple Silicon (#2122)
+* Update README.md (#2120)
+* Add GraalPython 21.3.0 (#2117)
+* Pypy ver 7.3.6 - python 3.7 and python 3.8 (#2111)
+* Discover Tcl/Tk reliably and use active version (#2106)
+* Fish installation instructions (#2104)
+* Add CPython 3.11.0a1 (#2099)
+
 ## Release 2.1.0
 * Fix mambaforge-pypy3 build (#2096)
 * Add Python 3.10.0 (#2093)
